@@ -1,9 +1,15 @@
 import React from "react"
 
-let listmap = []
+let listmap = ["dog", "cat", "chicken", "cow", "sheep", "horse"]
+
+let list1 = listmap.map(animal => <li>{animal}</li>)
 
 function List() {
-  return <div>Hello World</div>
+  return (
+    <div>
+      <ul>{list1}</ul>
+    </div>
+  )
 }
 
 export default List
